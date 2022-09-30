@@ -1,44 +1,46 @@
 package ir.maktab.repository;
 
 import ir.maktab.db.IdGenerator;
-import ir.maktab.model.User;
+import ir.maktab.model.Person;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class UserRepository extends AbstractRepository{
-    private Map<String, User> data = new HashMap<>();
+public class PersonRepository extends AbstractRepository{
+    private Map<Long, Person> data = new HashMap<>();
     private IdGenerator idGenerator;
 
-    public UserRepository(IdGenerator idGenerator) {
+    public PersonRepository(IdGenerator idGenerator) {
         this.idGenerator = idGenerator;
     }
 
-    public void save(User user) {
-        user.setId((String) idGenerator.generate());
+    public void save(Person person) {
+        person.setId((Long) idGenerator.generate());
         // implementation
     }
 
-    public void update(User user) {
+    public void update(Person person) {
         // implementation
     }
 
-    public User load(String id) {
-        // implementation
-        return null;
-    }
-
-    public List<User> loadAll() {
+    public Person load(Long id) {
         // implementation
         return null;
     }
 
-    public void delete(String id) {
+    public List<Person> loadAll() {
+        // implementation
+        return null;
+    }
+
+    public void delete(Long id) {
         // implementation
     }
 
     public void deleteAll() {
         // implementation
     }
+
+
 }
