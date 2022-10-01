@@ -29,17 +29,14 @@ public abstract class AbstractRepository<U, T extends IEntity<U>> implements IRe
     @Override
     public void update(T entity) {
         U id = entity.getId();
-        if (id == null) {
-            throw new IllegalArgumentException();
+        if (id.equals("null")) {
+            throw new IllegalArgumentException("id is null");
         } else {
-            for (Map.Entry<U, T> entry : data.entrySet()) {
-                if (!entry.getValue().getId().equals(id)) {
-                    throw new RuntimeException();
+                if (!data.containsKey(id)) {
+                    throw new RuntimeException("this id not found");
                 } else {
                     data.put(id, entity);
                 }
-            }
-
         }
     }
 
@@ -67,13 +64,10 @@ public abstract class AbstractRepository<U, T extends IEntity<U>> implements IRe
 
     @Override
     public void delete(U id) {
-        for (Map.Entry<U, T> entry : data.entrySet()) {
-            if (entry.getValue().getId().equals(id)) {
-                data.remove(entry.getKey());
-            } else {
-                throw new RuntimeException();
-            }
-
+        if (data.containsKey(id)) {
+            data.remove(id);
+        } else {
+            throw new RuntimeException();
         }
 
     }
