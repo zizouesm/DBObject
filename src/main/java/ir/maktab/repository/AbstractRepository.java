@@ -1,8 +1,8 @@
 package ir.maktab.repository;
 
-import ir.maktab.db.IEntity;
-import ir.maktab.db.IRepository;
-import ir.maktab.db.IdGenerator;
+import ir.maktab.util.IEntity;
+import ir.maktab.util.IRepository;
+import ir.maktab.util.IdGenerator;
 
 import java.util.*;
 

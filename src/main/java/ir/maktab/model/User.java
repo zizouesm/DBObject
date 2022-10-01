@@ -1,6 +1,6 @@
 package ir.maktab.model;
 
-import ir.maktab.db.IEntity;
+import ir.maktab.util.IEntity;
 
 public class User implements IEntity<String> {
     private String id;

@@ -1,9 +1,8 @@
-package ir.maktab.model;
+package ir.maktab.util;
 
-import ir.maktab.db.IdGenerator;
+import ir.maktab.util.IdGenerator;
 
 import java.util.Random;
-import java.util.UUID;
 
 public class NumericIdGenerator implements IdGenerator<Long> {
     @Override

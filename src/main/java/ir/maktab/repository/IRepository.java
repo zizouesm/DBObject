@@ -1,4 +1,6 @@
-package ir.maktab.db;
+package ir.maktab.repository;
+
+import ir.maktab.util.IEntity;
 
 import java.util.List;
 

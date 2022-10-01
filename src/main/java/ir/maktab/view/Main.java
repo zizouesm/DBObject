@@ -1,11 +1,11 @@
 package ir.maktab.view;
 
-import ir.maktab.db.IEntity;
-import ir.maktab.db.IRepository;
-import ir.maktab.db.IdGenerator;
-import ir.maktab.model.NumericIdGenerator;
+import ir.maktab.util.IEntity;
+import ir.maktab.util.IRepository;
+import ir.maktab.util.IdGenerator;
+import ir.maktab.util.NumericIdGenerator;
 import ir.maktab.model.Person;
-import ir.maktab.model.StringIdGenerator;
+import ir.maktab.util.StringIdGenerator;
 import ir.maktab.model.User;
 import ir.maktab.repository.AbstractRepository;
 import ir.maktab.repository.PersonRepository;

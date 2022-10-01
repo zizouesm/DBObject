@@ -1,6 +1,6 @@
-package ir.maktab.model;
+package ir.maktab.util;
 
-import ir.maktab.db.IdGenerator;
+import ir.maktab.util.IdGenerator;
 
 import java.util.UUID;
 
