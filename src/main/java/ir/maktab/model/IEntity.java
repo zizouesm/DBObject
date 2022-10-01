@@ -1,4 +1,4 @@
-package ir.maktab.util;
+package ir.maktab.model;
 
 public interface IEntity<I> {
 

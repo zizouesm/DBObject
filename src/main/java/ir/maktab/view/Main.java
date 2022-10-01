@@ -1,6 +1,6 @@
 package ir.maktab.view;
 
-import ir.maktab.util.IEntity;
+import ir.maktab.model.IEntity;
 import ir.maktab.util.IRepository;
 import ir.maktab.util.IdGenerator;
 import ir.maktab.util.NumericIdGenerator;

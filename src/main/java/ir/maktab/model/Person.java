@@ -1,7 +1,5 @@
 package ir.maktab.model;
 
-import ir.maktab.util.IEntity;
-
 public class Person implements IEntity<Long> {
     private Long id;
     private String nationalCode;

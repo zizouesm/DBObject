@@ -1,6 +1,6 @@
 package ir.maktab.repository;
 
-import ir.maktab.util.IEntity;
+import ir.maktab.model.IEntity;
 
 import java.util.List;
 
